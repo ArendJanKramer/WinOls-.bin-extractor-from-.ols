@@ -6,11 +6,12 @@ It is written in Rust.
 
 # Download
 Check releases for the latest version
+
 [Releases](https://github.com/ArendJanKramer/WinOls-.bin-extractor-from-.ols/releases/)
 
 # Usage
 ```bash
-winols_extract <ols input file> <.in output file>
+winols_extract <ols input file> <bin output file>
 ```
 
 # Build
