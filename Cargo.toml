@@ -1,0 +1,15 @@
+[package]
+name = "winols_extract"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[profile.release]
+lto = true              # Link-Time Optimization
+opt-level = "z"         # Optimize for binary size
+panic = "abort"         # Use abort instead of unwinding for panics
+strip = true            # Strip symbols from the binary
+codegen-units = 1       # Fewer code generation units (for size optimization)
+debug = false           # Remove debug info in release
+
+[dependencies]
